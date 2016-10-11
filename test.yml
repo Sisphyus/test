@@ -1,0 +1,5 @@
+- hosts: zabbix-server
+  remote_user: tangyj
+  tasks:
+    - service: Copy file to client
+      copy: src=/home/tangyj/server.tar dest=/home/tangyj/server.test
